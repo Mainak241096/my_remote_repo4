@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'cbvapp/base.html' %}
+{% block body_block %}
+<h1>Add New or Update existing Product</h1><hr>
+  <form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    &emsp;&emsp;&emsp;<input type="submit" name="" class="btn btn-outline-primary" value="Insert/Update Record">
+    &emsp;<a href="/access/drinks" class="btn btn-outline-info">Cancel Insert/Update</a>
+  </form>
+
+{% endblock %}
+
+<!-- After submitting the form control goes to def get_absolute_url(self) method in models.py -->

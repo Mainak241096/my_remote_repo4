@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'cbvapp/base.html' %}
+  {% block body_block %}
+    <h1>List of all Alcoholes</h1><hr>
+    <table border='2'>
+      <thead>
+        <th>Drinks</th>
+        <th>Price</th>
+        <th>Details</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </thead>
+      {% for drinks in beer_list %}
+        <tr>
+          <td>{{drinks.name}}</td>
+          <td>{{drinks.price}}</td>
+          <td> <a href="/access/detail/{{drinks.id}}" class="btn btn-outline-warning btn-sm">Details</a></td>
+          <td><a href="/access/update/{{drinks.id}}" class="btn btn-outline-success btn-sm">Update</a></td>
+          <td><a href="/access/delete/{{drinks.id}}" class="btn btn-outline-danger btn-sm">Delete</a></td>
+        </tr>
+      {% endfor %}
+    </table><br>
+    <a href="/access/create" class="btn btn-outline-success">Insert Record</a>
+  {% endblock %}
+
+
+  <!-- we can use drinks.id or drinks.pk -->

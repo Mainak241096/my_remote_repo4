@@ -1,0 +1,35 @@
+.container{
+  margin-top: 50px;
+}
+
+body{
+  background: url(https://img.freepik.com/premium-vector/seamless-pattern-items-associated-with-alcohol_444390-13395.jpg?w=740);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,h2{
+  color: white;
+}
+hr{
+  border-top: 3px dashed green;
+  margin-left: 310px;
+  margin-right: 310px;
+}
+strong{
+  color: yellow;
+  font-size: 20px;
+}
+li{
+  color: orange;
+  font-size: 20px;
+  font-weight: bold;
+}
+form{
+  color: white;
+  font-weight: bold;
+}
+th,td{
+  color: white;
+  font-weight: bold;
+}

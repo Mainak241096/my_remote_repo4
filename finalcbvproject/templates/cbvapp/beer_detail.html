@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'cbvapp/base.html' %}
+{%block body_block%}
+  <h1>Alcohol Details</h1><hr>
+  <ul>
+    <li>Name: {{beer.name}}</li>
+    <li>Price: {{beer.price}}</li>
+    <li>Flavour: {{beer.flavour}}</li>
+    <li>Food Mate: {{beer.food_mate}}</li>
+    <li>Country: {{beer.country}}</li>
+  </ul>
+  &emsp;&emsp;<a href="/access/drinks" class="btn btn-outline-info">Home</a>
+{%endblock%}
